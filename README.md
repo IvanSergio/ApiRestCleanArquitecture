@@ -19,16 +19,16 @@ Solucion ejemplo de la inplementacion de un ApiService con estructura limpia (Cl
 - dotnet new classlib -o SchoolAdministrator.Infraestructure
 
 ## Incluyendo Librerias de Clase y WebApi a la solucion principal
-dotnet sln add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj
-dotnet sln add SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
-dotnet sln add SchoolAdministrator.Services/SchoolAdministrator.Services.csproj
-dotnet sln add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj
+- dotnet sln add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj
+- dotnet sln add SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
+- dotnet sln add SchoolAdministrator.Services/SchoolAdministrator.Services.csproj
+- dotnet sln add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj
 
 ## Agregando referencias
-dotnet add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj SchoolsAdministrator.Services/SchoolsAdministrator.Services.csproj
-dotnet add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
-dotnet add SchoolAdministrator.Services/SchoolAdministrator.Services.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
-dotnet add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj reference SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj
+- dotnet add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj SchoolsAdministrator.Services/SchoolsAdministrator.Services.csproj
+- dotnet add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
+- dotnet add SchoolAdministrator.Services/SchoolAdministrator.Services.csproj reference SchoolAdministrator.Core/SchoolAdministrator.Core.csproj
+- dotnet add SchoolAdministrator.Web/SchoolAdministrator.Web.csproj reference SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj
 
 ## Compilando Solución
-dotnet build
+- dotnet build
