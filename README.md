@@ -1,6 +1,8 @@
 # ApiService Clean Arquitecture
 
-Solucion ejemplo de la inplementacion de un ApiService con estructura limpia (Clean Arquitecture), Net Core 5.
+Solucion ejemplo de la inplementacion de un ApiService con estructura limpia (Clean Arquitecture), Version Funcoinal en Net Core 7.
+
+# 1. Configuracion Inicial 
 
 ## Features
 
@@ -32,3 +34,17 @@ Solucion ejemplo de la inplementacion de un ApiService con estructura limpia (Cl
 
 ## Compilando Solución
 - dotnet build
+
+
+
+# 2. Armado de la capa Infraestructure.
+
+## Instalación de Entity Framework
+dotnet tool install --global dotnet-ef --version 7.0.14
+dotnet add package Microsoft.EntityFrameworkCore.Relational --version 7.0.14
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.14
+
+
+dotnet add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj package Microsoft.EntityFrameworkCore 
+dotnet add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj package Microsoft.EntityFrameworkCore.Design 
+dotnet add SchoolAdministrator.Infraestructure/SchoolAdministrator.Infraestructure.csproj package Microsoft.EntityFrameworkCore.SqlServer
